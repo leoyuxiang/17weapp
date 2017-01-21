@@ -1,14 +1,16 @@
-﻿body {
-    padding-top: 50px;
+﻿body, h2, h3, span {
+    padding-top: 20px;
     padding-bottom: 20px;
+    font-family: '微软雅黑';
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
 
+
+img {
+    border: 0;
+    vertical-align: middle;
+    display: inline-block;
+}
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
@@ -22,3 +24,122 @@ select,
 textarea {
     max-width: 280px;
 }
+
+
+
+a:hover {
+    text-decoration: none;
+}
+
+.clear {
+    clear: both;
+}
+
+.app_header {
+    box-shadow: 1px 1px 4px #dadada;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    background: #FFFFFF;
+}
+
+    .app_header .container {
+        width: 1150px;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        padding-top: 10px;
+    }
+
+        .app_header .container a.logo {
+            font-size: 36px;
+            float: left;
+            width: 450px;
+            line-height: 60px;
+        }
+
+.top .nav {
+    float: left;
+    font-size: 18px;
+    color: #303030;
+    margin-left: 45px;
+    margin-top: 17px;
+}
+
+    .top .nav a {
+        height: 50px;
+        line-height: 50px;
+        float: left;
+        margin-right: 32px;
+        font-size: 20px;
+    }
+
+.banner {
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+
+    .banner .releaseBtg {
+        display: block;
+        width: 120px;
+        height: 40px;
+        background: #FFFFFF;
+        border-radius: 6px;
+        font-size: 16px;
+        color: #41be57;
+        line-height: 40px;
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        top: 198px;
+        margin-left: -60px;
+        z-index: 998;
+    }
+
+    .banner img {
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        z-index: 997;
+    }
+
+.box-app {
+    padding-bottom: 22px;
+    box-sizing: border-box;
+}
+
+    .box-app .box-container {
+        width: 1080px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+        .box-app .box-container .box-title h2 {
+            font-size: 21px;
+            color: #41be57;
+            font-weight: bold;
+        }
+
+            .box-app .box-container .box-title h2 label {
+                display: inline-block;
+                width: 3px;
+                height: 21px;
+                background: #41be57;
+                vertical-align: middle;
+                margin-right: 8px;
+                margin-top: -5px;
+            }
+
+        .box-app .box-container .box-title .more {
+            font-size: 14px;
+            color: #aaaaaa;
+            margin-top: 4px;
+        }
+
+        .box-app .box-container .box-content {
+        }
